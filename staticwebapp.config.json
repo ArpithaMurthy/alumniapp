@@ -1,11 +1,6 @@
 {
   "routes": [
     {
-      "route": "/*",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
       "route": "/postcard",
       "serve": "/index.html"
     },
@@ -19,7 +14,8 @@
     },
     {
       "route": "/*",
-      "serve": "/index.html"
+      "serve": "/index.html",
+      "statusCode": 200
     }
   ],
   "platformErrorOverrides": [
