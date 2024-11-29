@@ -6,11 +6,6 @@
       "statusCode": 200
     },
     {
-      "route": "/**",
-      "serve": "/index.html",
-      "statusCode": 200
-    },
-    {
       "route": "/postcard",
       "serve": "/index.html"
     },
@@ -23,7 +18,7 @@
       "serve": "/index.html"
     },
     {
-      "route": "/**",
+      "route": "/*",
       "serve": "/index.html"
     }
   ],
