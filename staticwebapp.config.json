@@ -1,16 +1,37 @@
 {
-    "routes": [
-        {
-            "route": "/*",
-            "serve": "/index.html",
-            "statusCode": 200
-        }
-    ],
-    "platformErrorOverrides": [
-        {
-            "errorType": "FileNotFound",
-            "serve": "/index.html",
-            "statusCode": 200
-        }
-    ]
+  "routes": [
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/**",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/postcard",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/photos",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/videos",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/**",
+      "serve": "/index.html"
+    }
+  ],
+  "platformErrorOverrides": [
+    {
+      "errorType": "FileNotFound",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ]
 }
