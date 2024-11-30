@@ -23,11 +23,16 @@ const Home: React.FC = () => {
         share our experiences.
       </p>
       <div className="flex justify-center space-x-4">
-        <Button appearance="primary" onClick={() => navigate("/photos")}>
+        <Button appearance="secondary" onClick={() => navigate("/photos")}>
           View Photos
         </Button>
         <Button appearance="secondary" onClick={() => navigate("/videos")}>
           Watch Videos
+        </Button>
+      </div>
+      <div className="flex justify-center space-x-4">
+        <Button appearance="primary" onClick={() => navigate("/postcard")}>
+          Post card
         </Button>
       </div>
       <div className="flex justify-center space-x-4">
